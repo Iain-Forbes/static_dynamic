@@ -18,24 +18,24 @@ class CardGame:
 
 
   def check_for_ace(self, card):
-    if card.value = 1:
+    if card.value = 1: #Assign variable rather than checking card vaule is equal to 1 should be ==
       return True
-    else
+    else #No semi colon
       return False
    
 
-  dif highest_card(self, card1 card2):
-  if card1.value > card2.value:
-    return card
+  dif highest_card(self, card1 card2): # Dif rather than def for defining a function, also no comma between card 1 and card 2 
+  if card1.value > card2.value: #If statement not indented 
+    return card #Should be card1, card is undefined as a varibale
   else:
     return card2
   
 
 
-def cards_total(self, cards):
-  total
+def cards_total(self, cards): #Indention
+  total # Undefined, should = 0 
   for card in cards:
     total += card.value
-    return "You have a total of" + total
+    return "You have a total of" + total #Indention/formatting
   
-```
+``` #This shouldn't be here.

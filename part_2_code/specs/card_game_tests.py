@@ -8,7 +8,7 @@ class TestCardGame(unittest.TestCase):
         self.card = Card("Clubs", 3)
         self.card1 = Card("Hearts", 10 )
 
-        self.cards = [self.ace, self.card]
+        self.hand = [self.ace, self.card, self.card1]
         self.card_game = CardGame()
 
     def test_check_for_ace(self):
@@ -17,7 +17,7 @@ class TestCardGame(unittest.TestCase):
 
     def test_check_highest_card(self):
         self.highest_card = self.card_game.highest_card(self.card1, self.card)
-        self.assertEquals(self.highest_card.value, 10)
+        self.assertEqual(self.highest_card.value, 10)
 
     def test_total_cards(self):
-        pass
+        self.assertEqual(self.card_game.cards_total(self.hand),"You have a total of 14")
